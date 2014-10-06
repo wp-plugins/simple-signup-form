@@ -9,10 +9,10 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Build simple and effective Subscription Form with Visual Builder.
-[Demo Page](http://sympies.com/free-jquery-wordpress-signup-form/)
 
 == Description ==
 
+[Demo Page](http://sympies.com/free-jquery-wordpress-signup-form/)
  You'll get the subscription datas to your email address, therefore you can easily add it to your email manager software or mail list.
  Simple Signup Form is a powerful marketing solution to design your own signup form and put it to all or just some specified pages / posts. The visitors can subscribe with one single click using the Google Plus Signup option.
 
