@@ -12,7 +12,7 @@ Build simple and effective Subscription Form with Visual Builder.
 
 == Description ==
 
-[Demo Page](http://sympies.com/free-jquery-wordpress-signup-form/) | [Pro Version](http://sympies.com/simple-signup-popup/) | 
+[Demo Page](http://sympies.com/free-jquery-wordpress-signup-form/) | [Pro Version](http://sympies.com/simple-signup-popup/)
 
  You'll get the subscription datas to your email address, therefore you can easily add it to your email manager software or mail list.
  Simple Signup Form is a powerful marketing solution to design your own signup form and put it to all or just some specified pages / posts. The visitors can subscribe with one single click using the Google Plus Signup option.
