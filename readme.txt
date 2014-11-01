@@ -89,5 +89,8 @@ Initial Release
 
 == Changelog ==
 
+= 1.1 =
+* Fixed email sending issue
+
 = 1.0 =
 * First Release
