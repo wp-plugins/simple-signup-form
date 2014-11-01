@@ -149,7 +149,7 @@ if(!class_exists('simple_signup_form_settings'))
 				}
 			}
 			else $mv = '';
-			if (!empty($signup_form_id)&&is_int($signup_form_id))
+			if (!empty($signup_form_id)&&($signup_form_id>0))
 			{
 			$form_check = $wpdb->get_var("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
 			if (!empty($form_check)) $form_options = json_decode(stripslashes($form_check));
