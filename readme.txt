@@ -37,7 +37,6 @@ Build simple and effective Subscription Form with Visual Builder.
  
 == Features ==
 
-
 * Ajax Validation
 * Sign Up Notification via email
 * Google Plus Sign Up
