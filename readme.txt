@@ -17,6 +17,7 @@ Build simple and effective Subscription Form with Visual Builder.
  You'll get the subscription datas to your email address, therefore you can easily add it to your email manager software or mail list.
  Simple Signup Form is a powerful marketing solution to design your own signup form and put it to all or just some specified pages / posts. The visitors can subscribe with one single click using the Google Plus Signup option.
  
+ 
  = Ajax-Based Validation =
  The plugins checks the email address in the background without reloading the page. If the validation was success it's go ahead to send the data to your specified email address. If the email address is invalid, the user will see the error message, that you can add on your admin area.
  
