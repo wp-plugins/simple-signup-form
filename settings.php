@@ -155,10 +155,10 @@ if(!class_exists('simple_signup_form_settings'))
 			if (!empty($form_check)) $form_options = json_decode(stripslashes($form_check));
 			}
 			if (empty($form_check)&&!empty($signup_form_id)) $form_options[35] = sanitize_email($signup_form_id);
-			if (!isset($form_options[35])) die('error');
+			if (!isset($form_options[35])) die('Error: Missing Recipient Email');
 			else
 			{
-				if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die('error');
+				if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die('Error: Invalid Email Address');
 				else
 				{
 				if ($mode=='mail')
@@ -175,7 +175,7 @@ if(!class_exists('simple_signup_form_settings'))
 					else $result = false;
 				}
 				if ($result==true) die("success");
-				else die("error");
+				else die("Error: Mail Sending Failure");
 				}			
 			}
 			}
