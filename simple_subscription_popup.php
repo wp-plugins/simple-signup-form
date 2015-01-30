@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) OR exit;
  * Plugin URI: http://sympies.com/simple_popup_signup_form/
  * Description: Easily add and manage signup forms
  * Author: Pantherius
- * Version: 1.2.3
+ * Version: 1.2.4
  * Author URI: http://sympies.com
  */
  

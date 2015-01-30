@@ -166,12 +166,12 @@ if(!class_exists('simple_signup_form_settings'))
 					$body = "You've got a new signup on the http://".$_SERVER['HTTP_HOST'].str_replace('/wp-admin/admin-ajax.php','',$_SERVER['REQUEST_URI'])." website with the following mail address: ".$email.$customfields."
 					
 					";
-					$from_a = 'noreply@'.$_SERVER["HTTP_HOST"];
+					$from_a = 'noreply@'.str_replace("www.","",$_SERVER['HTTP_HOST']);
 					$from_name = 'Simple Signup Form';
-					$header = 'MIME-Version: 1.0' . "\r\n";
-					$header .= "From: =?utf-8?b?".base64_encode($from_name)."?= <".$from_a.">\r\n";
-					$header .= 'Content-type: text/plain; charset=UTF-8' . "\r\n";
-					if (mail($form_options[35], 'SUBSCRIPTION SIGNUP', $body, $header)) $result = true;
+					$header = 'MIME-Version: 1.0' . '\r\n';
+					$header .= 'From: "'.$from_name.'" <'.$from_a.'>\r\n';
+					$header .= 'Content-type: text/plain; charset=UTF-8';
+					if (wp_mail($form_options[35], 'SUBSCRIPTION SIGNUP', $body, $header)) $result = true;
 					else $result = false;
 				}
 				if ($result==true) die("success");
