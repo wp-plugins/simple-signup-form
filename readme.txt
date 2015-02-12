@@ -89,6 +89,9 @@ Initial Release
 
 == Changelog ==
 
+= 1.4 =
+* Fixed SQL security issue
+
 = 1.1 =
 * Fixed email sending issue
 

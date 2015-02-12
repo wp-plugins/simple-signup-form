@@ -79,107 +79,112 @@ if(!class_exists('simple_signup_form_settings'))
 		public function ajax_ssp()
 		{
 		global $wpdb;
-		$signup_form_id = "";
-		$form_name = "";
-		$form_options = "";
-		$form_global = "";
-		if (isset($_REQUEST['signup_form_id'])) $signup_form_id = sanitize_text_field($_REQUEST['signup_form_id']);
-		else $signup_form_id = "";
-		if (isset($_REQUEST['form_name'])) $form_name = sanitize_text_field($_REQUEST['form_name']);
-		else $form_name = "";
-		if (isset($_REQUEST['global_use'])) $form_global = sanitize_text_field($_REQUEST['global_use']);
-		else $form_global = "";
-		if (isset($_REQUEST['options'])) $form_options = sanitize_text_field($_REQUEST['options']);
-		else $form_options = "";
-		if (!empty($signup_form_id)&&($signup_form_id>0)) $form_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
-		else $form_check = 0;
-		if ($_REQUEST['sspcmd']=="save")
+		if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && ( $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' ) )
 		{
-		if ($form_check>0) {
-		//update signup form
-			$wpdb->update( $wpdb->prefix."simple_subscription_popup", array( "options" => $form_options, 'global' => $form_global),array('id' => $signup_form_id));
-			die("updated");
-		}
-		else {
-		//insert signup form
-			$wpdb->insert( $wpdb->prefix."simple_subscription_popup", array( 
-				'id' => $signup_form_id, 
-				'name' => $form_name, 
-				'options' => $form_options, 
-				'global'=> $form_global
-				) );
-			die('success');
-		}
-		}
-		elseif($_REQUEST['sspcmd']=="delete")
-		{
-		if ($form_check>0) {
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = %d",$signup_form_id));
-			die("deleted");
-		}
-		}
-		elseif ($_REQUEST['sspcmd']=="subscription_signup")
-		{
+			$signup_form_id = "";
+			$form_name = "";
 			$form_options = "";
-			if (isset($_REQUEST['email'])) $email = sanitize_email($_REQUEST['email']);
-			else $email = "";
-			if (isset($_REQUEST['mode'])) $mode = sanitize_text_field($_REQUEST['mode']);
-			else $mode = "";
-			if (isset($_REQUEST['double_optin'])) $double_optin = sanitize_text_field($_REQUEST['double_optin']);
-			else $double_optin = "";
-			if (isset($_REQUEST['update_existing'])) $update_existing = sanitize_text_field($_REQUEST['update_existing']);
-			else $update_existing = "";
-			if (isset($_REQUEST['replace_interests'])) $replace_interests = sanitize_text_field($_REQUEST['replace_interests']);
-			else $replace_interests = "";
-			if (isset($_REQUEST['mailchimp_listid'])) $mailchimp_listid = sanitize_text_field($_REQUEST['mailchimp_listid']);
-			else $mailchimp_listid = "";
-			if (isset($_REQUEST['send_welcome'])) $send_welcome = sanitize_text_field($_REQUEST['send_welcome']);
-			else $send_welcome = "";
-			$customfields = '';
-			if (isset($_REQUEST['customfieldsarray']))
+			$form_global = "";
+			if (isset($_REQUEST['signup_form_id'])) $signup_form_id = sanitize_text_field($_REQUEST['signup_form_id']);
+			else $signup_form_id = "";
+			if (isset($_REQUEST['form_name'])) $form_name = sanitize_text_field($_REQUEST['form_name']);
+			else $form_name = "";
+			if (isset($_REQUEST['global_use'])) $form_global = sanitize_text_field($_REQUEST['global_use']);
+			else $form_global = "";
+			if (isset($_REQUEST['options'])) $form_options = sanitize_text_field($_REQUEST['options']);
+			else $form_options = "";
+			if (!empty($signup_form_id)&&($signup_form_id>0)) $form_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
+			else $form_check = 0;
+			if ($_REQUEST['sspcmd']=="save")
 			{
-				if (!empty($_REQUEST['customfieldsarray']))
+			if(!current_user_can('manage_options')) die();
+			if ($form_check>0) {
+			//update signup form
+				$wpdb->update( $wpdb->prefix."simple_subscription_popup", array( "options" => $form_options, 'global' => $form_global),array('id' => $signup_form_id));
+				die("updated");
+			}
+			else {
+			//insert signup form
+				$wpdb->insert( $wpdb->prefix."simple_subscription_popup", array( 
+					'id' => $signup_form_id, 
+					'name' => $form_name, 
+					'options' => $form_options, 
+					'global'=> $form_global
+					) );
+				die('success');
+			}
+			}
+			elseif($_REQUEST['sspcmd']=="delete")
+			{
+			if(!current_user_can('manage_options')) die();
+			if ($form_check>0) {
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = %d",$signup_form_id));
+				die("deleted");
+			}
+			}
+			elseif ($_REQUEST['sspcmd']=="subscription_signup")
+			{
+				$form_options = "";
+				if (isset($_REQUEST['email'])) $email = sanitize_email($_REQUEST['email']);
+				else $email = "";
+				if (isset($_REQUEST['mode'])) $mode = sanitize_text_field($_REQUEST['mode']);
+				else $mode = "";
+				if (isset($_REQUEST['double_optin'])) $double_optin = sanitize_text_field($_REQUEST['double_optin']);
+				else $double_optin = "";
+				if (isset($_REQUEST['update_existing'])) $update_existing = sanitize_text_field($_REQUEST['update_existing']);
+				else $update_existing = "";
+				if (isset($_REQUEST['replace_interests'])) $replace_interests = sanitize_text_field($_REQUEST['replace_interests']);
+				else $replace_interests = "";
+				if (isset($_REQUEST['mailchimp_listid'])) $mailchimp_listid = sanitize_text_field($_REQUEST['mailchimp_listid']);
+				else $mailchimp_listid = "";
+				if (isset($_REQUEST['send_welcome'])) $send_welcome = sanitize_text_field($_REQUEST['send_welcome']);
+				else $send_welcome = "";
+				$customfields = '';
+				if (isset($_REQUEST['customfieldsarray']))
 				{
-					foreach($_REQUEST['customfieldsarray'] as $cfa)
+					if (!empty($_REQUEST['customfieldsarray']))
 					{
-						$mv[$cfa] = sanitize_text_field($_REQUEST[$cfa]);
-						$customfields .='
-'.sanitize_text_field($cfa).': '.sanitize_text_field($_REQUEST[$cfa]);
+						foreach($_REQUEST['customfieldsarray'] as $cfa)
+						{
+							$mv[$cfa] = sanitize_text_field($_REQUEST[$cfa]);
+							$customfields .='
+	'.sanitize_text_field($cfa).': '.sanitize_text_field($_REQUEST[$cfa]);
+						}
 					}
 				}
-			}
-			else $mv = '';
-			if (!empty($signup_form_id)&&($signup_form_id>0))
-			{
-			$form_check = $wpdb->get_var("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
-			if (!empty($form_check)) $form_options = json_decode(stripslashes($form_check));
-			}
-			if (empty($form_check)&&!empty($signup_form_id)) $form_options[35] = sanitize_email($signup_form_id);
-			if (!isset($form_options[35])) die('Error: Missing Recipient Email');
-			else
-			{
-				if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die('Error: Invalid Email Address');
+				else $mv = '';
+				if (!empty($signup_form_id)&&($signup_form_id>0))
+				{
+				$form_check = $wpdb->get_var("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
+				if (!empty($form_check)) $form_options = json_decode(stripslashes($form_check));
+				}
+				if (empty($form_check)&&!empty($signup_form_id)) $form_options[35] = sanitize_email($signup_form_id);
+				if (!isset($form_options[35])) die('Error: Missing Recipient Email');
 				else
 				{
-				if ($mode=='mail')
-				{
-					$body = "You've got a new signup on the http://".$_SERVER['HTTP_HOST'].str_replace('/wp-admin/admin-ajax.php','',$_SERVER['REQUEST_URI'])." website with the following mail address: ".$email.$customfields."
-					
-					";
-					$from_a = 'noreply@'.str_replace("www.","",$_SERVER['HTTP_HOST']);
-					$from_name = 'Simple Signup Form';
-					$header = 'MIME-Version: 1.0' . '\r\n';
-					$header .= 'From: "'.$from_name.'" <'.$from_a.'>\r\n';
-					$header .= 'Content-type: text/plain; charset=UTF-8';
-					if (wp_mail($form_options[35], 'SUBSCRIPTION SIGNUP', $body, $header)) $result = true;
-					else $result = false;
+					if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die('Error: Invalid Email Address');
+					else
+					{
+					if ($mode=='mail')
+					{
+						$body = "You've got a new signup on the http://".$_SERVER['HTTP_HOST'].str_replace('/wp-admin/admin-ajax.php','',$_SERVER['REQUEST_URI'])." website with the following mail address: ".$email.$customfields."
+						
+						";
+						$from_a = 'noreply@'.str_replace("www.","",$_SERVER['HTTP_HOST']);
+						$from_name = 'Simple Signup Form';
+						$header = 'MIME-Version: 1.0' . '\r\n';
+						$header .= 'From: "'.$from_name.'" <'.$from_a.'>\r\n';
+						$header .= 'Content-type: text/plain; charset=UTF-8';
+						if (wp_mail($form_options[35], 'SUBSCRIPTION SIGNUP', $body, $header)) $result = true;
+						else $result = false;
+					}
+					if ($result==true) die("success");
+					else die("Error: Mail Sending Failure");
+					}			
 				}
-				if ($result==true) die("success");
-				else die("Error: Mail Sending Failure");
-				}			
+				}
 			}
-			}
-			}
+		}
 	}
 }
 ?>
