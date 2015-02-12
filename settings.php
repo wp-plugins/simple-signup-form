@@ -93,7 +93,7 @@ if(!class_exists('simple_signup_form_settings'))
 			else $form_global = "";
 			if (isset($_REQUEST['options'])) $form_options = sanitize_text_field($_REQUEST['options']);
 			else $form_options = "";
-			if (!empty($signup_form_id)&&($signup_form_id>0)) $form_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
+			if (!empty($signup_form_id)&&($signup_form_id>0)) $form_check = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = %d",$signup_form_id));
 			else $form_check = 0;
 			if ($_REQUEST['sspcmd']=="save")
 			{
@@ -155,7 +155,7 @@ if(!class_exists('simple_signup_form_settings'))
 				else $mv = '';
 				if (!empty($signup_form_id)&&($signup_form_id>0))
 				{
-				$form_check = $wpdb->get_var("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = ".$signup_form_id);
+				$form_check = $wpdb->get_var($wpdb->prepare("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = %d",$signup_form_id));
 				if (!empty($form_check)) $form_options = json_decode(stripslashes($form_check));
 				}
 				if (empty($form_check)&&!empty($signup_form_id)) $form_options[35] = sanitize_email($signup_form_id);
