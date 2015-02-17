@@ -40,6 +40,7 @@ if(!class_exists('simple_signup_form_settings'))
 			wp_enqueue_script( 'simple_signup_form_admin' );
 			wp_enqueue_script( "simple_signup_form_colorpicker_script", plugins_url('/templates/assets/js/colorpicker.js' , __FILE__ ));
 			wp_enqueue_style('simple_signup_form_colorpicker_style', plugins_url( '/templates/assets/css/colorpicker.css' , __FILE__ ));
+			wp_enqueue_script('ssf_acustom', plugins_url( '/templates/assets/js/acustom.js' , __FILE__ ) , array('jquery'),'100017', true);
 		}
 		/**
 		* initialize datas on wp admin

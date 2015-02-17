@@ -1,5 +1,25 @@
+@import url("acustom.css");
 .settings_page_simple_subscription_popup .wrap .form-table th {
 	width: 400px;
+}
+
+#wpcontent
+{
+	background: #fff !important;
+}
+
+#add_new_ssp, .button
+{
+	margin: 1px !important;
+}
+
+.resp_text
+{
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 20px;
+	margin-top: 3px;
+	display: inline-block;
 }
 
 .settings_page_simple_subscription_popup .wrap hr { 
@@ -183,13 +203,13 @@
 	position: absolute;
 	right:50px;
 	font-size: 12px;
-	margin-top: -37px;
 }
 
 .colors
 {
 	padding-top: 10px;
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 #simple_subscription_popup_accordion .text2 {

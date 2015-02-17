@@ -1,5 +1,8 @@
-	<div id="screen_preloader" style="position: absolute;width: 100%;height: 1000px;z-index: 9999;text-align: center;background: #f1f1f1;padding-top: 200px;"><h3>SIMPLE SIGNUP FORM FREE</h3><img src="<?php print(plugins_url( '/assets/img/screen_preloader.gif' , __FILE__ ));?>"><h5>LOADING<br><br>Please wait...</h5></div>
+	<div id="screen_preloader" style="position: absolute;width: 100%;height: 1000px;z-index: 9999;text-align: center;background: #fff;padding-top: 200px;"><h3>SIMPLE SIGNUP FORM FREE</h3><img src="<?php print(plugins_url( '/assets/img/screen_preloader.gif' , __FILE__ ));?>"><h5>LOADING<br><br>Please wait...</h5></div>
 <div class="wrap" style="visibility:hidden">
+<?php
+	if (!isset($_REQUEST['settings-updated'])) require_once(sprintf("%s/acustom.php", dirname(__FILE__)));
+?>
 	<br /><br />
 	<h3>Simple SignUp Form Free<hr /></h3>
 	<div id="simple_subscription_popup_tabs">
@@ -10,7 +13,7 @@
 			<li><a href="#help">Help</a></li>
 		</ul>
 	<div id="simple_subscription_popup_settings">
-	<input type="text" id="ssp_name" value="" size="50" placeholder="Type your signup form name here" /><a id="add_new_ssp" class="button">New Form</a><span id="error_log"></span>
+	<input type="text" id="ssp_name" value="" size="50" placeholder="Type your signup form name here" /><a id="add_new_ssp" class="button button-small">New Form</a><span id="error_log"></span>
 	<div style="display:none;" id="new_form_content" class="main_form_container">
 	  <h3 class="accordion_ssp_header">Section 1</h3>
 	  <div>
@@ -1421,7 +1424,7 @@
 			<div style="display: inline-block;margin: 20px 0px 0px 20px;font-size: 12px;">HTML content is a <a target="_blank" href="http://sympies.com/simple-signup-form/?utm_source=wordpress.org&utm_medium=free%20version&utm_campaign=Simple%20Signup">Pro Version feature, you can see the full details and the demo here.</a></div>
 		<div style="clear:both;"></div>
 		<div>
-			<br><span><input type="submit" name="delete_form" class="delete_form button" value="DELETE"></span><span><input type="submit" name="save_form" class="save_form button" value="SAVE"></span><span class="signup_error_span"></span>
+			<br><span><input type="submit" name="delete_form" class="delete_form button button-secondary button-small" value="DELETE"></span><span><input type="submit" name="save_form" class="save_form button button-primary button-small" value="SAVE"></span><span class="signup_error_span"></span>
 		</div>
 	</div>
 	</div>
@@ -2877,7 +2880,7 @@
 			<div class="simple_subscription_popup_checkbox"><label class="text simple_subscription_popup_tooltip" title="Hide the close button of the popup" style="width: 200px;"><input type="checkbox" name="hidebutton" class="inputtext hidebutton" '.$hidebutton.' value="'.$hidebutton_value.'" /> Hide Close Button</label></div><div class="simple_subscription_popup_checkbox"><label class="text simple_subscription_popup_tooltip" title="Enable the triggering event on links" style="width: 200px;"><input type="checkbox" name="openwithlink" class="inputtext openwithlink" '.$openwithlink.' value="'.$openwithlink_value.'" /> Enable Open with Link</label></div><div class="simple_subscription_popup_checkbox"><label class="text simple_subscription_popup_tooltip" title="Do not display the Form for the user who is already filled out" style="width: 200px;"><input type="checkbox" name="once_per_filled" class="inputtext once_per_filled" '.$once_per_fout.' value="'.$once_per_fout_value.'" /> Once per Filled Out</label></div><div class="simple_subscription_popup_checkbox"><label class="text simple_subscription_popup_tooltip" title="Ability to close the form with clicking on the layer (enabled lock the screen)" style="width: 200px;"><input type="checkbox" name="closewithlayer" class="inputtext closewithlayer" '.$closewithlayer.' value="'.$closewithlayer_value.'" /> Close with Layer</label></div><div style="display: inline-block;margin: 20px 0px 0px 20px;font-size: 12px;">HTML content is a <a target="_blank" href="http://sympies.com/simple-signup-form/?utm_source=wordpress.org&utm_medium=free%20version&utm_campaign=Simple%20Signup">Pro Version feature, you can see the full details and the demo here.</a></div>');
 		print('<div style="clear:both;"></div>
 		<div>
-			<br><span><input type="submit" name="delete_form" class="delete_form button" value="DELETE"></span><span><input type="submit" name="save_form" class="save_form button" value="UPDATE"></span><span class="signup_error_span"></span>
+			<br><span><input type="submit" name="delete_form" class="delete_form button button-secondary button-small" value="DELETE"></span><span><input type="submit" name="save_form" class="save_form button button-primary button-small" value="UPDATE"></span><span class="signup_error_span"></span>
 		</div>
 	</div>');
 				}
@@ -2897,17 +2900,17 @@
 		<p>
 			<h3>Pro Version Features<br /><hr /></h3>
 			<ul>
-				<li>MailChimp Connection</li>
-				<li>Facebook Sign Up</li>
-				<li>Flexible Contents - Support HTML</li>
-				<li>Integrated Presets: Business, Finance, Technology and more</li>
-				<li>Styled inputs</li>
-				<li>Bottom line text - removed copyright</li>
-				<li>Different animation effects</li>
-				<li>Flexible Positions: combined left, right, top and bottom aligns</li>
-				<li>Unlimited Custom Fields, like First Name, Last Name, etc.</li>
+				<li>- MailChimp Connection</li>
+				<li>- Facebook Sign Up</li>
+				<li>- Flexible Contents - Support HTML</li>
+				<li>- Integrated Presets: Business, Finance, Technology and more</li>
+				<li>- Styled inputs</li>
+				<li>- Bottom line text - removed copyright</li>
+				<li>- Different animation effects</li>
+				<li>- Flexible Positions: combined left, right, top and bottom aligns</li>
+				<li>- Unlimited Custom Fields, like First Name, Last Name, etc.</li>
 			</ul>
-			<a target="_blank" style="color: #FFF;padding: 10px;font-weight: bold;font-size: 12px;background: #18BB26;text-decoration: none;border-radius: 5px;display: inline-block;" href="http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius">PURCHASE PRO VERSION</a>
+			<a target="_blank" class="button button-primary button-large" href="http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius">PURCHASE PRO VERSION</a>
 			<br /><br />
 		</p>
 	</div>

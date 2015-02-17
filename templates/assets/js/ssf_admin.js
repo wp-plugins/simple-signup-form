@@ -745,7 +745,7 @@ jQuery(window).load(function() {
 			if (error==false)
 			{
 			rmdni = true;
-		simplesp(buttonspan).html('<img width="20" style="margin-left:50px;" src="'+sspa_params.plugin_url+'/templates/assets/img/preloader.gif">');
+		simplesp(buttonspan).html('<img width="20" style="margin-left:20px;" src="'+sspa_params.plugin_url+'/templates/assets/img/preloader.gif">');
 		var data = {
 				action: 'ajax_ssp',
 				sspcmd: 'save',
@@ -754,9 +754,9 @@ jQuery(window).load(function() {
 				global_use: simplesp("#"+ssp_id+" .global_signup").val(),
 				options: JSON.stringify( options )
 				};
-				checker = setTimeout(function(){if (simplesp(buttonspan).html()!='<input type="submit" name="save_form" class="save_form button" value="SAVE">'||simplesp(buttonspan).html()!='<input type="submit" name="save_form" class="save_form button" value="UPDATE">')
+				checker = setTimeout(function(){if (simplesp(buttonspan).html()!='<input type="submit" name="save_form" class="save_form button button-primary button-small" value="SAVE">'||simplesp(buttonspan).html()!='<input type="submit" name="save_form" class="save_form button button-primary button-small" value="UPDATE">')
 			{
-			simplesp(buttonspan).html('<input type="submit" name="save_form" class="save_form button" value="TRY AGAIN"><span style="margin-left: 35px;line-height:25px;color: #FC0303;">Error during the save process</span>')
+			simplesp(buttonspan).html('<input type="submit" name="save_form" class="save_form button button-primary button-small" value="TRY AGAIN"><span style="margin-left: 35px;line-height:25px;color: #FC0303;">Error during the save process</span>')
 			}
 			},15000);
 				simplesp.post(sspa_params.admin_url, data, function(response) {
@@ -766,8 +766,8 @@ jQuery(window).load(function() {
 				if (response=="success") var buttontext = "SAVE";
 				else var buttontext = "UPDATE";
 				if (simplesp("#"+ssp_id+" .notemail").val()=="") {simplesp("#"+ssp_id+" .signup_error_span").html("<small>Your Email Address is not specified yet!</small>");}
-				simplesp(buttonspan).html('<span style="margin-left: 35px;line-height:25px;"><strong>'+buttontext+'D</strong></span>');
-				setTimeout(function(){simplesp(buttonspan).html('<input type="submit" name="save_form" class="save_form button" value="'+buttontext+'">')},2000);
+				simplesp(buttonspan).html('<span class="resp_text"><strong>'+buttontext+'D</strong></span>');
+				setTimeout(function(){simplesp(buttonspan).html('<input type="submit" name="save_form" class="save_form button button-primary button-small" value="'+buttontext+'">')},2000);
 				}
 					rmdni = false;
 				});
