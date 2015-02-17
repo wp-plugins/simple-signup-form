@@ -89,7 +89,7 @@ Initial Release
 
 == Changelog ==
 
-= 1.4.2 =
+= 1.4.3 =
 * improved display on admin
 
 = 1.4 =
