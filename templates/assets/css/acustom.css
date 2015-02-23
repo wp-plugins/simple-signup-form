@@ -23,6 +23,7 @@
 	background: #000;
 	opacity: 0.5;
 	z-index:99998;
+	height: 1500px;
 }
 
 .pop-up-content {
