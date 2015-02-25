@@ -2,10 +2,10 @@
 defined( 'ABSPATH' ) OR exit;
 /**
  * Plugin Name: Simple Signup Form Free
- * Plugin URI: http://sympies.com/simple_popup_signup_form/
+ * Plugin URI: https://wordpress.org/plugins/simple-signup-form
  * Description: Easily add and manage signup forms
  * Author: Pantherius
- * Version: 1.4.31
+ * Version: 1.4.32
  * Author URI: http://sympies.com
  */
  
