@@ -11,14 +11,13 @@ print('
 		<h4>Pro Version Features</h4>
 		<div class="half">
 		<ul>
-			<li>- connect to MailChimp easily</li>
-			<li>- Facebook Subscription</li>
-			<li>- Add any HTML content to the form, like YouTube videos</li>
+			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse</li>
+			<li>- Subscription with Google Plus & Facebook</li>
+			<li>- HTML content in the form, YouTube Integration</li>
 			<li>- Bottom line text and removed copyright notice</li>
 			<li>- More animation effects and flexible positions</li>
 			<li>- Unlimited custom text fields</li>
-			<li>- Free Support</li>
-			<li>- Free Updates</li>
+			<li>- Free Support & Updates</li>
 		</ul>
 		</div>
 		<div class="half">

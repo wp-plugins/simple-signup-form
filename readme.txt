@@ -35,6 +35,18 @@ Build simple and effective Subscription Form with Visual Builder.
  
  = Force to Sign Up with Locking the Screen =
  Provides an option to lock the screen and hide the close button, therefore the users needs to sign up to see the content behind the form.
+
+ = Pro Version =
+ <a href="http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius">Pro Version</a> offers:
+ * Integration with MailChimp API, Active Campaign API, Benchmark API, Campaign Monitor API, Campayn API, Constant Contact API, Freshmail API, GetResponse API
+ * Facebook Subscription
+ * Add any HTML content to the form, like YouTube videos
+ * Bottom line text and removed copyright notice
+ * More animation effects and flexible positions
+ * Unlimited custom text fields
+ * Free Support</li>
+ * Free Updates</li>
+
  
 == Features ==
 
