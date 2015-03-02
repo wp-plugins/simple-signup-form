@@ -11,7 +11,7 @@ print('
 		<h4>Pro Version Features</h4>
 		<div class="half">
 		<ul>
-			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse</li>
+			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse, Mad Mimi, MyMail</li>
 			<li>- Subscription with Google Plus & Facebook</li>
 			<li>- HTML content in the form, YouTube Integration</li>
 			<li>- Bottom line text and removed copyright notice</li>
