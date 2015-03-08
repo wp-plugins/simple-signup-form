@@ -38,24 +38,43 @@ Build simple and effective Subscription Form with Visual Builder.
 
  = Pro Version =
  <a href="http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius">Pro version of Simple Signup Form for WordPress</a> offers:
-* **MailChimp API**
-* **Active Campaign API**
-* **Benchmark API**
-* **Campaign Monitor API**
-* **Campayn API**
-* **Constant Contact API**
-* **Freshmail API**
-* **GetResponse API**
-* **Mad Mimi API**
-* **MyMail**
-* **YouTube** Video Integration
-* **Facebook** and **Google Plus** Subscription
-* Add any HTML content to the form, like YouTube videos
-* Bottom line text and removed copyright notice
-* More animation effects and flexible positions
-* Unlimited custom text fields
-* Free Support</li>
-* Free Updates</li>
+
+ * **MailChimp API**
+ 
+ * **Active Campaign API**
+ 
+ * **Benchmark API**
+ 
+ * **Campaign Monitor API**
+ 
+ * **Campayn API**
+ 
+ * **Constant Contact API**
+ 
+ * **Freshmail API**
+ 
+ * **GetResponse API**
+ 
+ * **Mad Mimi API**
+ 
+ * **MyMail**
+ 
+ * **YouTube** Video Integration
+ 
+ * **Facebook** and **Google Plus** Subscription
+ 
+ * Add any HTML content to the form, like YouTube videos
+ 
+ * Bottom line text and removed copyright notice
+ 
+ * More animation effects and flexible positions
+ 
+ * Unlimited custom text fields
+ 
+ * Free Support
+ 
+ * Free Updates
+
 
  
 == Features ==
