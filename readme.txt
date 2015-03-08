@@ -37,7 +37,7 @@ Build simple and effective Subscription Form with Visual Builder.
  Provides an option to lock the screen and hide the close button, therefore the users needs to sign up to see the content behind the form.
 
  = Pro Version =
- <a href="http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius">Pro version of Simple Signup Form for WordPress</a> offers:
+ [Pro version of Simple Signup Form for WordPress](http://codecanyon.net/item/simple-signup-wordpress-email-subscription-form/7644126?ref=pantherius) offers:
 
  * **MailChimp API**
  
