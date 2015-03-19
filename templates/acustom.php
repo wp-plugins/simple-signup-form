@@ -11,12 +11,12 @@ print('
 		<h4>Pro Version Features</h4>
 		<div class="half">
 		<ul>
-			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse, Mad Mimi, MyMail</li>
+			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse, Mad Mimi, MyMail, SimplyCast, YMLP</li>
 			<li>- Subscription with Google Plus & Facebook</li>
 			<li>- HTML content in the form, YouTube Integration</li>
 			<li>- Bottom line text and removed copyright notice</li>
 			<li>- More animation effects and flexible positions</li>
-			<li>- Unlimited custom text fields</li>
+			<li>- Unlimited custom text fields, Tracking Forms with Google Analytics</li>
 			<li>- Free Support & Updates</li>
 		</ul>
 		</div>

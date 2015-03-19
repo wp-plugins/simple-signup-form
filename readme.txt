@@ -41,7 +41,7 @@ Build simple and effective Subscription Form with Visual Builder.
 
  * Connect to **MailChimp** API easily
  * Implemented **Active Campaign** API
- * Supports **Benchmark** API
+ * Support **Benchmark** API
  * Included **Campaign Monitor** API
  * **Campayn** API integration
  * Integrated **Constant Contact** API
@@ -49,6 +49,10 @@ Build simple and effective Subscription Form with Visual Builder.
  * **GetResponse** API implemented
  * Connect to your **Mad Mimi** lists easily
  * **MyMail** for WordPress Integration
+ * Support **SimplyCast** API
+ * Included **YMLP** API
+ * Tracking Forms with Google Analytics
+ * Export Stats (Copy, CSV, Excel, PDF, Print)
  * **YouTube** Video Integration
  * **Facebook** and **Google Plus** Subscription
  * Add any HTML content to the form, like YouTube videos
