@@ -3,7 +3,7 @@ print('
 <div class="pop-up-screen">
 	 <div class="pop-up-content">
 		<h3>Thank you...</h3>
-		<p>for downloading this plugin. Simple Signup Form Free is a limited version, even you can reach many of options. If you really would like to get much more customization possibilities, purchase the <a target="_blank" href="http://sympies.com/simple-signup-form/">PRO version</a> for only a one-time fee: $18</p>
+		<p>for downloading this plugin. Simple Signup Form Free is a limited version, even you can reach many of options. If you really would like to get much more customization possibilities, purchase the <a target="_blank" href="http://pantherius.com/simple-signup-form/">PRO version</a> for only a one-time fee: $18</p>
 		<blockquote>This is a solid solution! It is very effective too! I was getting 1 newsletter sign up every 1.9 days. I am now consistently getting 10 email sign ups every day. This is with about 250 visits per day. Full disclosure my solution before required customers to register now they can signup without having to!<cite>jeremy11allen 
 <img src="'.plugins_url( '/assets/img/fivestar.jpg' , __FILE__ ).'"/>
 

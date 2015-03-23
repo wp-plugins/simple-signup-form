@@ -12,7 +12,7 @@ Build simple and effective Subscription Form with Visual Builder.
 
 == Description ==
 
-[Demo & More Details](http://sympies.com/free-jquery-wordpress-signup-form/) | [MailChimp Version](http://sympies.com/simple-signup-popup/) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
+[Demo & More Details](http://pantherius.com/free-jquery-wordpress-signup-form/) | [MailChimp Version](http://pantherius.com/simple-signup-popup/) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
 
  You'll get the subscription datas to your email address, therefore you can easily add it to your email manager software or mail list.
  Simple Signup Form is a powerful marketing solution to design your own signup form and put it to all or just some specified pages / posts. The visitors can subscribe with one single click using the Google Plus Signup option.
@@ -105,7 +105,7 @@ On your admin you can see the shortcode after you select the accordion of the fo
 
 = Can I connect this plugin to MailChimp? =
 
-MailChimp mode is a feature of the Pro Version, you can check the full features list on [Simple Signup Popup](http://sympies.com/simple-signup-popup/ "Simple Signup Popup")
+MailChimp mode is a feature of the Pro Version, you can check the full features list on [Simple Signup Popup](http://pantherius.com/simple-signup-popup/ "Simple Signup Popup")
 
 = How to enable the Google Plus sign up option? =
 
