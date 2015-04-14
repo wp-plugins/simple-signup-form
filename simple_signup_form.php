@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) OR exit;
  * Plugin URI: https://wordpress.org/plugins/simple-signup-form
  * Description: Easily add and manage signup forms
  * Author: Pantherius
- * Version: 1.4.5
+ * Version: 1.4.6
  * Author URI: http://pantherius.com
  */
  
