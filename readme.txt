@@ -3,7 +3,7 @@ Contributors: Pantherius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6H6YHMQG8JJ5J&lc=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: sign up, social signup, subscription, subscribe form, signup form, signup popup, subscription popup, subscription form, google plus
 Requires at least: 3.9.0
-Tested up to: 4.1.2
+Tested up to: 4.2.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
