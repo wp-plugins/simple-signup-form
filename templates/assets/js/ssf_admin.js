@@ -35,7 +35,7 @@ jQuery(window).load(function() {
 			step: 0.1,
 			value: thisvalue,
 			min: 0.1,
-			max: 60,
+			max: 5,
 			slide: function( event, ui ) {
 			simplesp( "#"+ssp_id+" .simple_subscription_popup_animation_speed_value" ).val( "Animation Speed: "+ui.value + "sec" );
 			}
@@ -50,7 +50,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 6,
-			max: 200,
+			max: 40,
 			slide: function( event, ui ) {
 				simplesp( "#"+ssp_id+" .simple_subscription_popup_font_size_value" ).val( "Font Size: "+ui.value + "px" );
 				if (simplesp("#mc_embed_signup_inner").length!=0) simplesp("#mc_embed_signup_inner h2").css("font-size",ui.value + "px");
@@ -67,7 +67,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 6,
-			max: 200,
+			max: 40,
 			slide: function( event, ui ) {
 				simplesp( "#"+ssp_id+" .simple_subscription_popup_content_font_size_value" ).val( "Content Font Size: "+ui.value + "px" );
 				if (simplesp("#mc_embed_signup_inner").length!=0) simplesp("#mc_embed_signup_inner p").css("font-size",ui.value + "px");
@@ -84,7 +84,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 200,
+			max: 100,
 			slide: function( event, ui ) {
 				simplesp( "#"+ssp_id+" .simple_subscription_popup_border_radius_value" ).val( "Border Radius: "+ui.value + "px" );
 				if (simplesp("#mc_embed_signup #mc_embed_signup_inner").length!=0) simplesp("#mc_embed_signup #mc_embed_signup_inner").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
@@ -101,7 +101,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 200,
+			max: 40,
 			slide: function( event, ui ) {
 				simplesp( "#"+ssp_id+" .simple_subscription_popup_close_button_size_value" ).val( "Close Button Size: "+ui.value + "px" );
 				if (simplesp("#mc_embed_signup_inner").length!=0) simplesp("#mc_embed_close").css("font-size",ui.value + "px");
@@ -215,7 +215,7 @@ jQuery(window).load(function() {
 			value: thisvalue,
 			min: 0,
 			step: 0.1,
-			max: 200,
+			max: 360,
 			slide: function( event, ui ) {
 				simplesp( "#"+ssp_id+" .simple_subscription_popup_display_timer_value" ).val( "Display Timer: "+ui.value + "sec" );
 			}
