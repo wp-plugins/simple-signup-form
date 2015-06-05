@@ -15,7 +15,7 @@ print('
 			<li>- Subscription with Google Plus & Facebook, <strong>Embed Mode</strong></li>
 			<li>- HTML content in the form, YouTube Integration, Multiple Instances</li>
 			<li>- Bottom line text and removed copyright notice, <strong>200+ Animation Variations</strong></li>
-			<li>- Custom Radio Buttons, Select Field, Textarea, Video Background</li>
+			<li>- Custom Radio Buttons, Select Field, Textarea, Video or Image Background</li>
 			<li>- Unlimited custom text fields, Tracking Forms with <strong>Google Analytics</strong></li>
 			<li>- Premium Support & Updates</li>
 		</ul>
