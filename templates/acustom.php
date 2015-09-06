@@ -11,7 +11,7 @@ print('
 		<h4>Pro Version Features</h4>
 		<div class="half">
 		<ul>
-			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse, Mad Mimi, MyMail, SimplyCast, YMLP</li>
+			<li>- Integration with MailChimp, Active Campaign, Benchmark, Campaign Monitor, Campayn, Constant Contact, Freshmail, GetResponse, Mad Mimi, MyMail, SimplyCast, YMLP, MailPoet</li>
 			<li>- Subscription with Google Plus & Facebook, <strong>Embed Mode</strong></li>
 			<li>- HTML content in the form, YouTube Integration, Multiple Instances</li>
 			<li>- Bottom line text and removed copyright notice, <strong>200+ Animation Variations</strong></li>

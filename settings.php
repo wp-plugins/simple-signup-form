@@ -154,6 +154,11 @@ if(!class_exists('simple_signup_form_settings'))
 					}
 				}
 				else $mv = '';
+				$customfields .='
+						
+IP Address: ' . $_SERVER[ 'REMOTE_ADDR' ] . '
+						
+Date: ' . date( "d-m-Y H:i" ); 
 				if (!empty($signup_form_id)&&($signup_form_id>0))
 				{
 				$form_check = $wpdb->get_var($wpdb->prepare("SELECT options FROM ".$wpdb->prefix."simple_subscription_popup WHERE `id` = %d",$signup_form_id));
